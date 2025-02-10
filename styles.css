@@ -80,10 +80,10 @@ body {
   margin: 1.5%;
 }
 
-.frame-over:hover {
+/* .frame-over:hover {
   transform: scale(1.05);
   box-shadow: 0 0 30px rgba(174, 23, 23, 0.7);
-}
+} */
 
 .contact {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
