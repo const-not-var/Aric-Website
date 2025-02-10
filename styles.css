@@ -1,0 +1,161 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #insta-media {
+    width: 100%;
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  body {
+    background-size: cover;
+    background-color: #1a1a1a;
+    background-blend-mode: darken;
+    font-family: 'Roboto Mono', monospace;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* padding: 1rem; */
+  }
+  
+  .nav-name {
+    max-width: 250px;
+    margin-bottom: 30px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 1.5rem;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ffffff;
+    padding: 1rem 0;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ff4444;
+  }
+  
+  .section {
+    margin: 4rem 0;
+    text-align: center;
+  }
+  
+  .about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #cccccc;
+  }
+  
+  .frame-over {
+    border-radius: 8px;
+    max-width: 325px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 1.5%;
+  }
+  
+  .frame-over:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(174, 23, 23, 0.7);
+  }
+  
+  .contact {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    position: relative;
+    text-align: center;
+  }
+  
+  .contact a {
+    color: #ff4444;
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #121212;
+    width: 100%;
+    position: sticky;
+    opacity: 90%;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  
+    .section {
+      margin: 2rem 0;
+    }
+  
+    .frame-over {
+      flex-direction: column;
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+  
+    .header {
+      padding: 0.5rem 0;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .about p {
+      font-size: 0.9rem;
+    }
+  
+    .frame-over {
+      margin-bottom: 10px;
+      align-content: center;
+    }
+
+    #insta-media {
+      width: 75%;
+      display: inline;
+    }
+  }
+  
+  
